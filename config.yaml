@@ -1,0 +1,7 @@
+# This config file is for the bot
+# You can choose what prefix you want, and what cogs you want active 
+prefix: "!"
+
+cogs:
+    - help
+
