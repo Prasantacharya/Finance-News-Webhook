@@ -13,8 +13,7 @@ class Help(commands.Cog):
         # make embed
         # get config
         embed = discord.Embed(
-            title="Commands:",
-            color="#CC790"
+            title="Commands:"
         )
         embed.set_author(
             name="Stonk Bot",
