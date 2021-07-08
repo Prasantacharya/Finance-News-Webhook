@@ -1,0 +1,11 @@
+# This config file is for the bot
+# You can choose what prefix you want, and what cogs you want active
+
+# put token here, please do not let this leak
+# copy this files as config.yaml with the changes you have made
+token: ""
+
+prefix: "!"
+
+cogs:
+    - help
