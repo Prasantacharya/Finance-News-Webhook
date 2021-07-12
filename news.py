@@ -54,6 +54,10 @@ def getPages(url, headers, tag, body):
         elif linkLocation[0:4] != "http":
             tickerName = linkLocation.split('/')[2].split(":")[0]
 
+            if tickerName[0] == '.':
+                flag = {"link": "", "ticker": [], "tickerNames": []}
+                continue
+
             flag["ticker"].append(tickerName)
             flag["tickerNames"].append(getStockInfo(tickerName, headers))
     return articleArray
