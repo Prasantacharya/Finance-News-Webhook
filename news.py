@@ -55,7 +55,6 @@ def getPages(url, headers, tag, body):
             tickerName = linkLocation.split('/')[2].split(":")[0]
 
             if tickerName[0] == '.':
-                flag = {"link": "", "ticker": [], "tickerNames": []}
                 continue
 
             flag["ticker"].append(tickerName)
