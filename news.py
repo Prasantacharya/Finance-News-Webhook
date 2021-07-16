@@ -55,7 +55,7 @@ def getPages(url, headers, tag, body):
             tickerName = linkLocation.split('/')[2].split(":")[0]
             # Dosent get stonks with '.' or other non-alphanumeric characters, with the exception of '-'
             # Did this cuz of an edge case with Berkshire Hathaway
-            if not (tickerName.isalnum() or '-' in tickerName):
+            if not (tickerName.isalpha() or '-' in tickerName):
                 continue
 
             flag["ticker"].append(tickerName)
